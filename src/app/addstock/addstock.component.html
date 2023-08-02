@@ -1,0 +1,24 @@
+<form class="was-validated" (ngSubmit)="addStock()" #ff="ngForm" id="contact-form">
+    <h2>Add Stock</h2>
+    <label for="">Company Name:</label>
+
+    <input type="text" class="form-control rounded  mb-3 form-input" name="companyName" [(ngModel)]="newStock.companyName" required>
+
+    <label for="">Stock Price:</label>
+
+    <input type="number" step="0.01" class="form-control rounded  mb-3 form-input" name="currentPrice" [(ngModel)]="newStock.currentPrice" min="0.01" required>
+
+    <label for="">Volume</label>
+
+    <input type="number" class="form-control rounded  mb-3 form-input" name="volume" [(ngModel)]="newStock.volume" min="1" required>
+    <div class="buttons">
+      <div class="cancel-button-wrapper"> 
+          <button class="submit" (click)="navigate()">Cancel</button>
+      </div>
+      <div class="submit-button-wrapper">
+          <button class="submit" type="submit" [disabled]="!ff.valid">Add</button>
+      </div>
+  </div>
+
+</form>
+

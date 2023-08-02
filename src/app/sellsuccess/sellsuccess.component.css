@@ -1,0 +1,81 @@
+.sellsuccess {
+    background-color: #ffffff;
+    margin-top: 120px;
+    margin-left: -205px;
+    padding: 20px;
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px #657789;
+  }
+  h1{
+    text-align: center;
+    font-size: 30px;
+    color: #3A98B9 ;
+  }
+  
+  i {
+    color: #9ABC66;
+    font-size: 80px;
+    line-height: 200px;
+    margin-left: 46px;
+  }
+  
+  .sellsuccess div {
+    margin-bottom: 18px;
+  }
+
+  .sellsuccess .sell {
+    margin-top: 30px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .sellsuccess label {
+    font-weight: bold;
+  }
+  
+  .sellsuccess h2 {
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+
+  .button-container {
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .btn1 {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: none;
+    background: #EEEEEE;
+    color: #3A98B9;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn1::before {
+    content: "";
+    position: absolute;
+    background: #3A98B9;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: .5s ease-out;
+  }
+  
+  .btn1:hover::before {
+    transform: scaleX(1);
+  }

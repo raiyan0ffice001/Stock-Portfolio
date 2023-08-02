@@ -1,0 +1,51 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@100&family=Lilita+One&family=Monoton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lilita+One&family=Monoton&family=Open+Sans:wght@300;400&family=Zilla+Slab:ital@1&display=swap');
+</style>
+
+
+<ul>
+    <li><input type="text" [(ngModel)]="searchTerm" placeholder="Search by Company Name" class="textbox"></li>
+    <li class="search"><svg xmlns="http://www.w3.org/2000/svg" height="1.87em"
+            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+                svg {
+                    fill: #ffffff
+                }
+            </style>
+            <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+        </svg></li>
+
+</ul>
+
+<div class="centre-table">
+    <div class="stock-table-container">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th class="header-cell">Stock Id</th>
+                    <th class="header-cell">Ticker</th>
+                    <th class="header-cell">Volume</th>
+                    <th class="header-cell">Current Price</th>
+                    <th class="header-cell">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="data-row" *ngFor="let s of stocks" [hidden]="s.companyName.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1">
+                    <td>{{s.id}}</td>
+                    <td>{{s.companyName}}</td>
+                    <td>{{s.volume}}</td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="0.985em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#050000}</style><path d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"/></svg>
+                        {{s.currentPrice}}</td>
+                    <td><button class="custom-btn btn-5" (click)="localStorage(s)"><span>Update</span></button></td>
+                </tr>
+                <button class="custom-btn btn-16" (click)="navigate()"><span>Add More</span></button>
+            </tbody>
+        </table>
+    
+    </div>
+</div>
+    
+    

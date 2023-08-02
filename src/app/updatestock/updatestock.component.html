@@ -1,0 +1,19 @@
+<form class="was-validated" (ngSubmit)="update()" id="contact-form">
+        <h2>Update Stock</h2>
+        <label>Ticker: {{updateStock.companyName}} </label>
+        <br>
+        <!-- <input type="text" class="form-control rounded border-white mb-3 form-input" name="companyName" [(ngModel)]="updateStock.companyName" readonly> -->
+        <label>Available Shares</label>
+        <input type="number" class="form-control rounded border-white mb-3 form-input" name="volume" [(ngModel)]="updateStock.volume" min="0">
+        <label>Current Price</label>
+        <input type="number" step="0.01" class="form-control rounded border-white mb-3 form-input" name="currentPrice" [(ngModel)]="updateStock.currentPrice" min="0.01">
+        <div class="buttons">
+            <div class="cancel-button-wrapper"> 
+                <button class="submit" (click)="navigate()">Cancel</button>
+            </div>
+            <div class="submit-button-wrapper">
+                <button class="submit" type="submit">Update</button>
+            </div>
+        </div>
+</form>
+

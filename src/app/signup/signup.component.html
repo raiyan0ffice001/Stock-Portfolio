@@ -1,0 +1,48 @@
+<div class="container">
+    <h2 class="signup-title">Sign up</h2>
+  
+    <form id="signup-form" class="was-validated" (ngSubmit)="signUp()">
+      <div>
+        <label for="name">Name </label>
+        <input
+               id="name"
+               type="text"
+               placeholder="Enter name"
+               pattern=".{4,}"
+               name="name" [(ngModel)]="newCustomer.name"
+               required
+               />
+      </div>
+  
+      <div>
+        <label for="phone">Phone number </label>
+        <input
+               id="phone"
+               type="text"
+               placeholder="Enter phone number"
+               pattern="[789]\d{9}" minlength="10" maxlength="10"
+               name="phoneNo" [(ngModel)]="newCustomer.phoneNo"
+               required
+               />
+      </div>
+  
+      <div>
+        <label for="password">Password </label>
+        <input
+               id="password"
+               type="password"
+               placeholder="Enter password"
+               pattern=".{4,}"
+               name="password" [(ngModel)]="newCustomer.password"
+               required
+               />
+      </div>
+  
+      <button class="btn btn--form" type="submit" value="Log in" >
+        Sign up
+      </button>
+      <p class="text">
+        Already have an account? <a [routerLink]="['/login']" class="link">Login</a>
+      </p>
+    </form>
+  </div>

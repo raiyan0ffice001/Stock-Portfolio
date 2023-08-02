@@ -1,0 +1,41 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cormorant+Garamond:wght@700&family=Lora&family=Press+Start+2P&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora&display=swap');
+</style>
+
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-left">
+      
+      <div class="nav-title">
+        <img clas="logo"
+              width="40"
+              height="40"
+              src="assets/img/logo.svg"
+              alt="stocks-growth"
+            />
+            <a href="#" class="logo-text">$tock Alliance</a>
+      </div>
+      <div class="nav-links">
+        <a [routerLink]="['/home']">Home</a>      
+      </div>
+      <div class="nav-links">
+        <a [routerLink]="['/liststocks']">All Stocks</a>      
+      </div>
+      <div class="nav-links" *ngIf="flag">
+        <a [routerLink]="['/portfolio']">Portfolio</a>      
+      </div>
+    </div>
+    <div class="nav-right">
+        <div class="nav-links" *ngIf="!flagl">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 288A144 144 0 1 0 256 0a144 144 0 1 0 0 288zm-94.7 32C72.2 320 0 392.2 0 481.3c0 17 13.8 30.7 30.7 30.7H481.3c17 0 30.7-13.8 30.7-30.7C512 392.2 439.8 320 350.7 320H161.3z"/></svg>
+          <a [routerLink]="['/login']">Login</a>       
+        </div>
+        <div class="nav-links" *ngIf="flagl">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 288A144 144 0 1 0 256 0a144 144 0 1 0 0 288zm-94.7 32C72.2 320 0 392.2 0 481.3c0 17 13.8 30.7 30.7 30.7H481.3c17 0 30.7-13.8 30.7-30.7C512 392.2 439.8 320 350.7 320H161.3z"/></svg>
+          <a (click)="clear()">Logout</a>     
+        </div> 
+    </div>  
+</div>
+<hr>
+<router-outlet></router-outlet>

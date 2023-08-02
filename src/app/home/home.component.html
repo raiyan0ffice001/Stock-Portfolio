@@ -1,0 +1,480 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@700&family=Lora&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cormorant+Garamond:wght@700&family=Lora&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Monoton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lilita+One&family=Monoton&family=Zilla+Slab:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lilita+One&family=Monoton&family=Mukta:wght@300&family=Open+Sans:wght@300;400&family=Zilla+Slab:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Kaushan+Script&family=Lilita+One&family=Monoton&family=Mukta:wght@300&family=Open+Sans:wght@300;400&family=Zilla+Slab:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lilita+One&family=Monoton&family=Mukta:wght@300&family=Open+Sans:wght@300;400&family=Yatra+One&family=Zilla+Slab:ital@1&display=swap');
+</style>
+<div class="tabs_boxes">
+    <div class="stockcontainer stock-slide ">
+        <div class="nav nav-tabs">
+            <div class="tab_box up">
+                <p data-nse-translate="symbol" data-nse-translate-symbol="AAPL" class="tb_name" id="NIFTY 50">AAPL</p>
+                <p class="tb_val">19,695.20 <span class="arrow"></span>
+                </p>
+                <p class="tb_per greenTxt">49.15 (0.25%)
+                </p>
+            </div>
+            <div class="tab_box up">
+                <p data-nse-translate="symbol" data-nse-translate-symbol="MSFT" class="tb_name" id="NIFTY NEXT 50">MSFT
+                </p>
+                <p class="tb_val">45,292.45 <span class="arrow"></span>
+                </p>
+                <p class="tb_per greenTxt">126.05 (0.28%)
+                </p>
+            </div>
+            <div class="tab_box down">
+                <p data-nse-translate="symbol" data-nse-translate-symbol="MSFT" class="tb_name" id="NIFTY NEXT 50">IBM
+                </p>
+                <p class="tb_val">45,292.45 <span class="arrow"></span>
+                </p>
+                <p class="tb_per redTxt">126.05 (0.28%)
+                </p>
+            </div>
+            <div class="tab_box up">
+                <p data-nse-translate="symbol" data-nse-translate-symbol="NIFTY MIDCAP SELECT" class="tb_name"
+                    id="NIFTY MIDCAP SELECT">AMZN</p>
+                <p class="tb_val">8,585.35 <span class="arrow"></span>
+                </p>
+                <p class="tb_per greenTxt">106.05 (1.25%)
+                </p>
+            </div>
+            <div class="tab_box up">
+                <p data-nse-translate="symbol" data-nse-translate-symbol="NIFTY BANK" class="tb_name" id="NIFTY BANK">
+                    TSLA</p>
+                <p class="tb_val">45,530.65 <span class="arrow"></span>
+                </p>
+                <p class="tb_per greenTxt">62.55 (0.14%)
+                </p>
+            </div>
+            <div class="tab_box down">
+                <p data-nse-translate="symbol" data-nse-translate-symbol="NIFTY FINANCIAL SERVICES" class="tb_name"
+                    id="NIFTY FINANCIAL SERVICES">TATA</p>
+                <p class="tb_val">20,292.85 <span class="arrow"></span>
+                </p>
+                <p class="tb_per redTxt">-5.20 (-0.03%)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="welcome">
+    <h3 *ngIf="flag">Welcome "{{uname}}"</h3>
+</div>
+<div class="home">
+    <div class="banner">
+        <div class="img-left">
+            <img src="assets/img/bull_f.jpg" alt="" class="image">
+        </div>
+         
+        <div class="heading">
+            <h1>The best trades require research, then commitment</h1>
+
+            <h3>Invest Right, Invest now!!</h3>
+        </div>
+
+        <div class="img-right">
+            <img src="assets/img/bear.jpg" alt="Bear" class="image">
+        </div>
+    </div>
+    <div class="text-slider">
+        <ul class="slide-list">
+            <li>Discover stocks with filters</li>
+            <li>Buy stocks in one single click</li>
+            <li>Have complete access to information</li>
+            <li>Clear privacy policy</li>
+            <li>Stay up-to-date with latest financial news and research reports</li>
+            <li>Follow us on social media</li>
+        </ul>
+    </div>
+
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container bottomContainer">
+            <div class="ultimateImg">
+                <img class="mainImg" src="assets/img/bull1.jpg">
+                <div class="purpleBox">
+                    <p class="purpleText">
+
+                    </p>
+                    <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg">
+                </div>
+            </div>
+            <div class="allText bottomText">
+                <p class="text-blk headingText">
+                    About Us
+                </p>
+                <p class="text-blk subHeadingText">
+                    Building the foundation of Trust: Where Relationships Flourish!
+                </p>
+                <p class="text-blk description">
+                    Haven't invested or traded yet? No issues, Stock Alliance is here to help at every step of yours.
+                    With a totally free account opening and maintenance charges, we simply help the trading for beginners
+                    with the help of our experienced teams and regular stock updates.<br><br>
+                    Say goodbye to paperwork hassles! Our seamless and paperless account opening process saves your time
+                    and eforts. Your fiancial success is our topmost priority.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <h3 class="bline">Benefits</h3>
+        <p class="why">Why choose Stock Alliance?</p>
+        <div class="benefits" id="benefit">
+
+            <div class="benefits1">
+                <img src="assets/img/right-arrow.png" alt="" class="arrow">
+                <div class="showhim">
+                    <h3 class="line">Efficient Initiation</h3>
+                    <div class="showme">
+                        <p class="description">A completely Secure quick onboarding process without significant delays.
+                            Set up an account with just a mobile number.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits1">
+                <img src="assets/img/right-arrow.png" alt="" class="arrow">
+                <div class="showhim">
+                    <h3 class="line">Easy Management</h3>
+                    <div class="showme">
+                        <p class="description">Requires less time and effort to make adjustments, thus can easily focus
+                            on other financial goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="benefits1">
+                <img src="assets/img/right-arrow.png" alt="" class="arrow">
+                <div class="showhim">
+                    <h3 class="line">Reduced Overhead</h3>
+                    <div class="showme">
+                        <p class="description">With a concise stock portfolio, one swip is all that's needed to update
+                            your stock.Transaction costs and fees are thereby minimized providing investment efficiency.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="benefits1">
+                <img src="assets/img/right-arrow.png" alt="" class="arrow">
+                <div class="showhim">
+                    <h3 class="line">Informed Decisions</h3>
+                    <div class="showme">
+                        <p class="description">Have updates on every decsion! With well-structured portfolios, each
+                            holding gets equal attention with every performance being analyzed thereby helping one to
+                            make informed choices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout">
+            <div class="button-box">
+                <button class="seven" (click)="invest()">Start investing</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="brokerage">
+        <h1 class="mono">Brokerage and other charges</h1>
+        <p id="intro">Here is for you to start investing and trading with no hidden charges!</p>
+
+        <div class="parent">
+            <div class="child">
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #050000
+                            }
+                        </style>
+                        <path
+                            d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z" />
+                    </svg>
+                    0
+                </h1>
+                <h3>Account opening charges</h3>
+            </div>
+            <div class="child">
+                <h1><svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #050000
+                            }
+                        </style>
+                        <path
+                            d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z" />
+                    </svg>
+                    0</h1>
+                <h3>Account maintenance</h3>
+            </div>
+            <div class="child">
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #050000
+                            }
+                        </style>
+                        <path
+                            d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z" />
+                    </svg>
+                    15 on First
+                </h1>
+                <h3>Brokerage free</h3>
+            </div>
+            <div class="child">
+                <h1>2.5% on market-rate</h1>
+                <h3>Commission</h3>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="child">
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #050000
+                            }
+                        </style>
+                        <path
+                            d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z" />
+                    </svg>
+                    15
+                </h1>
+                <h3>Intraday Brokerage Charges</h3>
+            </div>
+            <div class="child">
+                <h1><svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #050000
+                            }
+                        </style>
+                        <path
+                            d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z" />
+                    </svg>
+                    15</h1>
+                <h3>Delivery Brokerage Charges</h3>
+            </div>
+            <div class="child">
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #050000
+                            }
+                        </style>
+                        <path
+                            d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z" />
+                    </svg>
+                    12
+                </h1>
+                <h3>Futue Trading Charges</h3>
+            </div>
+            <div class="child">
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #050000
+                            }
+                        </style>
+                        <path
+                            d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z" />
+                    </svg>
+                    5
+                </h1>
+                <h3>Currency Futures</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviewcontainer">
+        <h2>Here's what our Clients say</h2>
+        <div class="review">
+            <div class="review-header">
+                <h3>Rajiv Krishnan</h3>
+            </div>
+            <p>I've been using this stock exchange website for a few months now, and I must say it's been a game-changer
+                for my investment portfolio. The platform is user-friendly, with intuitive navigation and robust
+                features. The market data and analysis tools have helped me make informed decisions, resulting
+                in impressive returns. I highly recommend this website to any serious investor</p>
+            <span>Rating: ⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <h3>Lavanya Verma</h3>
+            </div>
+            <p>I've tried several stock exchange websites in the past, but this one stands out from the rest. The
+                platform's interface is clean and modern, making it easy to find the information I need. I appreciate
+                the extensive range of stocks available for trading and the seamless execution of trades. Moreover, the
+                customer support team has been responsive and helpful whenever I had questions or encountered any
+                issues. Overall, I'm extremely satisfied with this website</p>
+            <span>Rating: ⭐⭐⭐⭐</span>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <h3>Rehan khan</h3>
+            </div>
+            <p>I have been a loyal user of this stock exchange website for a while, and it never disappoints. The
+                website's mobile app is incredibly convenient, allowing me to monitor my portfolio and execute trades on
+                the go. The intuitive design makes it a pleasure to use, regardless of the device I'm using. The
+                website's security measures provides peace of mind. I wouldn't hesitate to recommend this platform to
+                fellow investors</p>
+            <span>Rating: ⭐⭐⭐⭐⭐</span>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-day-time">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul>
+                                <li>Opening Hours: Monday - Friday: 9:15AM - 3:30PM</li>
+                                <li> Saturday - Sunday : Closed</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="phone-no">
+                                <h1 class="contactdetails">Contact Details</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+
+                        <div id="cform" class="contact-form-wrapper d-flex justify-content-center">
+                            <form action="https://google.com" class="contact-form">
+                                <p class="description">Feel free to contact us if you need any assistance, any help or
+                                    another question.
+                                </p>
+                                <div>
+                                    <input type="email" class="form-control rounded border-white mb-3 form-input"
+                                        placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <textarea id="message" class="form-control rounded border-white mb-3 form-text-area"
+                                        rows="5" cols="30" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="submit-button-wrapper">
+                                    <button type="submit"> SEND</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Information</h4>
+                        <ul class="address1">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #ffffff
+                                        }
+                                    </style>
+                                    <path
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                </svg>
+                                Raganork Arena, Tower 2, 5th Floor
+                            </li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #fafafa
+                                        }
+                                    </style>
+                                    <path
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                </svg>
+                                stock@alliance.com</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #ffffff
+                                        }
+                                    </style>
+                                    <path
+                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                </svg>
+                                +91 98765623</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Follow us</h4>
+                        <ul class="social-icon">
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                        viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            svg {
+                                                fill: #ffffff
+                                            }
+                                        </style>
+                                        <path
+                                            d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" />
+                                    </svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            svg {
+                                                fill: #ffffff
+                                            }
+                                        </style>
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            svg {
+                                                fill: #ffffff
+                                            }
+                                        </style>
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            svg {
+                                                fill: #ffffff
+                                            }
+                                        </style>
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="copyright text-uppercase">Copyright © 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
